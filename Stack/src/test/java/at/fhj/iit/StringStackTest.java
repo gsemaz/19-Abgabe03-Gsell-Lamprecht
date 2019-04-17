@@ -79,5 +79,14 @@ public class StringStackTest
         s.push("5");
         s.push("6");
     }
+
+
+    @Test (expected = IllegalStateException.class)
+    public void testPoppedTooMuch() throws Exception
+    {
+        s.push("1");
+        s.pop();
+        s.pop();
+    }
     
 }
