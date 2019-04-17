@@ -3,6 +3,8 @@ package at.fhj.iit;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class StringStackTest
 {
     public Stack s;
@@ -22,6 +24,8 @@ public class StringStackTest
     @Test
     public void testIsEmpty() throws Exception
     {
+        s = new StringStack(5);
+        assertEquals(true, s.isEmpty());
     }
     
     /**
@@ -33,6 +37,7 @@ public class StringStackTest
     @Test
     public void testIsNotEmpty() throws Exception
     {
+
     }
 
     /**
