@@ -24,7 +24,6 @@ public class StringStackTest
     @Test
     public void testIsEmpty() throws Exception
     {
-        s = new StringStack(5);
         assertEquals(true, s.isEmpty());
     }
     
@@ -37,7 +36,6 @@ public class StringStackTest
     @Test
     public void testIsNotEmpty() throws Exception
     {
-
     }
 
     /**
